@@ -5,6 +5,7 @@ function Conversor(){
 
     //En funcion de los valores asignados procedemos a hacer la conversion
     if(valor!=0){
+        //Operamos con centimos para evitar trabajar con decimales y que las operaciones den mal resultados
         switch(moneda){
             case "dollar":
                 valor *=110;
@@ -34,6 +35,6 @@ function Conversor(){
                 alert("Selecciona una divisa.")
         }
     }else{
-        alert("Se necesita un valor para realizar la operación.")
+        alert("Se necesita una cantidad mínima para realizar la operación.")
     }
 }
