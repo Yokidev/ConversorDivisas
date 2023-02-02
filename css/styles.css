@@ -1,0 +1,94 @@
+body{
+    background-color: black;
+}
+
+main{
+    background-color: white;
+    height: 20rem; 
+    margin-top: 100px; 
+    border-radius: 20px; 
+    border: 5px solid rgb(122, 122, 122);
+}
+
+header{
+    text-align: center; 
+    margin-top: 20px; 
+    text-decoration: underline;
+}
+
+#icono{
+    width: 9%;
+    height: 10%;
+}
+
+.row{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#cantidadInicial:hover, #moneda:hover, #resultado:hover{
+    border: transparent;
+    border: solid 1px #d2d2d29c;
+    box-shadow: 0px 0px 0px 4px #1f4fee58;
+    transition: box-shadow 0.2s;
+}
+
+#columna1 input{
+    margin-top: 84px;
+    margin-left: 16px;
+    text-align: end;
+    
+}
+
+#columna2 select{
+    margin-top: 53px;
+}
+
+#columna3 input{
+    margin-top: 48px;
+    margin-left: 16px;
+}
+
+
+#resultado{
+    text-align: end;
+}
+
+/*Estilo flechas caja input*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+@media (max-width: 576px) {
+    main{
+        height: 650px;
+    }
+
+    #columna1 input{
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: end;    
+    }
+    
+    #columna2 select{
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        width: 70%;
+    }
+    
+    #columna3 input{
+        margin: auto;
+        margin: -1rem 0 1rem 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+#columna2 select{
+    margin-top: 5.1rem;
+}
+}
